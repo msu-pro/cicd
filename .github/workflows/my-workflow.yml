@@ -1,14 +1,15 @@
 name: Manual install
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+  workflow_dispatch:
     inputs:
       run-tests:
         description: 'Run tests ?'
-        default: 'true'
+        default: 'false'
         required: true
         type: boolean
+  pull_request:
+    types: [ opened, reopened, synchronize ]
 jobs:
   install:
     runs-on: ubuntu-latest
