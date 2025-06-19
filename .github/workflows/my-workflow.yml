@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       run-tests:
-        description: 'Run tests true or false'
+        description: 'Run tests ?'
         default: 'false'
         required: true
         type: boolean
