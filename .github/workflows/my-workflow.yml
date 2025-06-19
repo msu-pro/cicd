@@ -2,9 +2,15 @@ name: Manual install
 
 on:
   workflow_dispatch:
-
+    inputs:
+      run-tests:
+        description: 'Run tests true or false'
+        default: false
+        required: true
+        type: boolean
 jobs:
   install:
+    if:
     runs-on: ubuntu-latest
 
     steps:
