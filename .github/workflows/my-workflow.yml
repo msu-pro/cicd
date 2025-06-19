@@ -9,7 +9,7 @@ on:
         required: true
         type: boolean
 jobs:
-  build-and-test:
+  build-and-test-with-database:
     runs-on: ubuntu-latest
     services:
       postgres:
